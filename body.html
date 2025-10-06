@@ -3,76 +3,112 @@
   <head> 
     <title>university clone</title>
     <link rel="stylesheet" href="body.css">
+    
+     
      <style>
+      body {
+        background-image: url('pictures/background.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color: #222;
+      }
      .boxes {
         display: grid;
-        grid-template-columns: 300px 350px 350px;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns* /
+        gap: 20px; /* space between columns and rows */
+        margin: 40px;
         
-         
+     }
+        
+         /* make the last two columns have two rows each */
 
-         
-        }
-        .boxes img {
-          width: 300px;
-          inset-inline: 20px;
-          display: block;
-          margin: auto;
-        
-          
-        }
-        img {
+         .box1,
+         .box2,
+         .box3 {
+          background: rgba(255, 255, 255, 0.9);
+          border-radius: 10px;
+          padding: 15px;
+          box-shadow: 0 4px 10px;
+
+         }
+        .box1 img,
+        .box2 img,
+        .box3 img{
+          width: 100%;
           height: auto;
-          vertical-align: bottom;
-          max-width: 300px;
-         overflow-clip-margin: content-box;
-         overflow: clip;
+          border-radius: 10px;
+        }
+        .box1 p,
+        .box2 p,
+        .box3 p {
+          font-weight: bold;
+          margin: 10px 0;
+          text-decoration: underline;
+        }
+        .text, .purpose, .class, .leadership  {
+          text-decoration: none;
+          color: #004080;
+          font-size: 1rem;
 
         }
-        .boxes p {
-          font-size: 13px;
-          color: green;
-          width: 10px;
-        }
-        .boxes h3 {
-          width: 20px;
-          height: 15px;
-          line-height: 30px;
-          font-size: 20px;
-          font-weight: 50px;
-        }
-        .box1 {
-          padding: 200px;
-          inline-size: 20px;
-          margin-top: -10px;
-          margin-left: -20px;
-          margin-right: 10px;
-          
+        .text:hover,
+        .article-card_link:hover,
+        .medecine-link:hover {
+          color: #cc0000;
           
         }
-        .box2 {
-          grid-column: 2;
-          padding: 180px 150px;
-          margin-left: 80px;
-          grid-column: 2;
-        }
-        .box3 {
-          padding: 180px 150px;
-        }
-        .box2, 
-        .box3 {
-          display: grid;
-          grid-row: 500px 500px;
-          margin: 10px -5px;
-        }
-        .text {
-          width: 10px;
-          font-weight: 50px;
-          font-size: 1.2rem;
-        }
+      .dental-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #011F5B;
+        padding: 20px;
+      }
+      .dental {
+        width: 100%;
+        max-width: 600px;/* controls image size */
+        border-radius: 10px;
+
+      }
+      .container {
+        display: flex;
+        flex-direction: column; 
+        background-color: #011F5B;
+        padding: 30px;
+        border-radius: 10px;
+        margin: 20px;
+        max-width: 700px;
+        color: #fff;
+      }
+      .container h1 {
+      margin-bottom: 15px;
+      color: #fff;
+      font-size: 16px;
+      
+      }
+      .container a {
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+      }
+      .container button {
+        width: 200px;
+        height: 50px;
+        margin-left: 40px;
+        border-radius: 25px;
+        color: rgb(126, 126, 126);
+        background-color: #fff;
+      }
+      .container button:hover {
+        background-color: #011F5B;
+        color: white;
+        border-color: none;  
 
 
+      }
      </style>
-     
     
   </head>
   <body>
@@ -96,21 +132,22 @@
         <div class="box1">
         <img src="social science.jpg">
         <p>SOCIAL SCIENCE</p>
-        <h3 class="text">Two leadership gift elevate 
+        <a href="https://penntoday.upenn.edu/news/two-leadership-
+        gifts-elevate-jewish-studies-penn-arts-sciences" class="purpose">Two leadership gift elevate 
           jewish studies at penn Arts& Sciences
-        </h3>
+        </a>
         </div>
         <div class="box2">
           <img src="campus.jpg">
           <p>CAMPUS & COMMUNITY</p>
-          <h3 class="class">Water Environment Federation,Amazon,
-            Penn's Water Center,and leading utilities of the world launch
-            groundbreaking Water-AI Nexus Center of Excellence
-          </h3>
+          <a href="https://penntoday.upenn.edu/
+          news/penn-receives-5m-gift-new-theatre" class="class">
+          Penn receives $ 5M gift for new theatre
+        </a>
           <img src="community.jpg">
           <a herf="https://penntoday.upenn.edu/news/penn-sas-noah-royal
           -milad-purpose-and-community">
-         <a href="https://penntoday.upenn.edu/news/penn-sas-noah-royal-milad-purpose-and-community" class="article-card__link">
+         <a href="https://penntoday.upenn.edu/news/penn-sas-noah-royal-milad-purpose-and-community" class="purpose">
               Noah Royal Milad: Purpose and community
             </a>
 
@@ -118,16 +155,36 @@
         <div class="box3">
           <img src="natural science.jpeg"
           <p>HEALTH & MEDECINE</p>
-          <h3 class="text">
+          <a href="https://penntoday.upenn.edu/news/penn-medicine-drew-weissman-future
+          -mrna-vaccines-may-prevent-food-and-seasonal-allergies" class="text">
             Future mRNA vaccines may prevent
             food and seasonal allergies
-          </h3>
+        </a>
           <img src="medicine.jpg">
           <a href="https://penntoday.upenn.edu/news/penn-medicine-drew-weissman-future-mrna-vaccines-may-prevent-food
-          -and-seasonal-allergies" class"medicine-link">
+          -and-seasonal-allergies" class"leadership">
               Two leadership gifts elevate Jewish Studies
                at Penn Arts &amp; Sciences
               </a>
+        </div>
+      </div>
+    </div>
+    <div class="dental-container" >
+      
+        <img  src="pictures/penn-dental-cedar.jpg">"
+      </div>
+      <div class="container">
+        <h1>HEALTH & MEDECINE</h1>
+        <a href="https://penntoday.upenn.edu/news/penn-dental-cedar-bridges-
+        medicine-and-dentistry-lightens-er-demands" >Penn Dental on Cedar bridges medecine and destiny,
+          lightens ER demands
+      </a>
+        <p> penn dental medecine at PHMC an cedar is one of five community care programs the school dental medecine operates.
+          At Penn dental on cedar,part of the mission is to integrate dental and medical care.
+        </p>
+        <button> 
+          LEARN MORE
+        </button>
         </div>
       </div>
     </div>
