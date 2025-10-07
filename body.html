@@ -3,115 +3,19 @@
   <head> 
     <title>university clone</title>
     <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="box.css">
+     <link rel="stylesheet" href="pictures/dental.css">
     
-     
-     <style>
+    <style>
       body {
-        background-image: url('pictures/background.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        text-align: center;
-        color: #222;
+       background-image: url('pictures/background.jpg');
+       background-size: 100%;
+       background-repeat: no-repeat;
       }
-     .boxes {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns* /
-        gap: 20px; /* space between columns and rows */
-        margin: 40px;
-        
-     }
-        
-         /* make the last two columns have two rows each */
 
-         .box1,
-         .box2,
-         .box3 {
-          background: rgba(255, 255, 255, 0.9);
-          border-radius: 10px;
-          padding: 15px;
-          box-shadow: 0 4px 10px;
-
-         }
-        .box1 img,
-        .box2 img,
-        .box3 img{
-          width: 100%;
-          height: auto;
-          border-radius: 10px;
-        }
-        .box1 p,
-        .box2 p,
-        .box3 p {
-          font-weight: bold;
-          margin: 10px 0;
-          text-decoration: underline;
-        }
-        .text, .purpose, .class, .leadership  {
-          text-decoration: none;
-          color: #004080;
-          font-size: 1rem;
-
-        }
-        .text:hover,
-        .article-card_link:hover,
-        .medecine-link:hover {
-          color: #cc0000;
-          
-        }
-      .dental-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #011F5B;
-        padding: 20px;
-      }
-      .dental {
-        width: 100%;
-        max-width: 600px;/* controls image size */
-        border-radius: 10px;
-
-      }
-      .container {
-        display: flex;
-        flex-direction: column; 
-        background-color: #011F5B;
-        padding: 30px;
-        border-radius: 10px;
-        margin: 20px;
-        max-width: 700px;
-        color: #fff;
-      }
-      .container h1 {
-      margin-bottom: 15px;
-      color: #fff;
-      font-size: 16px;
-      
-      }
-      .container a {
-        color: #fff;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 10px;
-      }
-      .container button {
-        width: 200px;
-        height: 50px;
-        margin-left: 40px;
-        border-radius: 25px;
-        color: rgb(126, 126, 126);
-        background-color: #fff;
-      }
-      .container button:hover {
-        background-color: #011F5B;
-        color: white;
-        border-color: none;  
-
-
-      }
-     </style>
-    
+    </style>
   </head>
-  <body>
+  <body >
     <div class="header">
         <div> 
     
@@ -171,7 +75,7 @@
     </div>
     <div class="dental-container" >
       
-        <img  src="pictures/penn-dental-cedar.jpg">"
+        <img class="dental-image" src="pictures/penn-dental-cedar.jpg">"
       </div>
       <div class="container">
         <h1>HEALTH & MEDECINE</h1>
