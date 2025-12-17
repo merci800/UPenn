@@ -1,1 +1,1 @@
-This project is a clone of University of Pennsylvania
+ clone of University of Pennsylvania
